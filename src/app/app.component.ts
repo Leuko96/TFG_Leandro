@@ -10,4 +10,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'cineapp';
+  contador = 0;
+
+  incremetar(){
+    this.contador++;
+  }
+  deincremetar(){
+    this.contador--;
+  }
 }
