@@ -13,6 +13,8 @@ import { BackendService } from "./backend.service";
 })
 export class UsuariosService {
 
+  _rolCentro: String="Chet Baker";
+
   constructor(private backend: BackendFakeService) {}
 
   doLogin(login: Login): Observable<UsuarioSesion> {
@@ -60,9 +62,9 @@ export class UsuariosService {
     }
   }
 
-  // get rolCentro(): RolCentro | undefined {
-  //   return this._rolCentro;
-  // }
+  get rolCentro(): String | undefined {
+    return "ROLCENTRO";
+  }
 
   // set rolCentro(r: RolCentro | undefined) {
   //   this._rolCentro = r;
